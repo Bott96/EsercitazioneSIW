@@ -1,0 +1,113 @@
+@charset "ISO-8859-1";
+
+H1, H2, H3{
+	color: RED;
+	background: aqua;
+}
+body{
+	
+	background-color: "#E6E6FA";
+}
+
+
+#prova{
+	border-style:dotted;
+	color: blue;
+	background: aqua;
+	font-style: oblique;
+}
+UL>LI {
+	
+	color: red;
+	
+	
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+article{
+
+font:50px Time New Roman;
+color: maroon;
+background-color: #E6EFFA;
+
+}
+
+section{
+
+font:25px Time New Roman;
+color: blue;
+background-color: rgb(190,170,198);
+
+}
+
+
+footer{
+
+font:70px Time New Roman;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
