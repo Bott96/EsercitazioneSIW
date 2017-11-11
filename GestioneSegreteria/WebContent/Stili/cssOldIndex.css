@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+H1 {
+	text-shadow: 3px 1px #8080ff;
+	color: RED;
+	background: aqua;
+}
+
+h2 {
+	text-decoration: line-through;
+}
+
+h1+h2{
+	text-decoration: underline;
+}
+
+ul{
+	list-style-type: square;
+}
+
+ol{
+	list-style-type: lower-alpha;
+}
+
+
+
+.subMenu>li{
+	
+	display: inline;
+	
+	
+}
+li{
+	
+	display: inline-block;
+	
+	
+}
+
+article{
+	
+	postion: absolute;
+	left: 50px;
+	
+	width: 40%;
+}
+
+
+article+article{
+	postion: absolute;
+	width: 35%;
+	left: 55%;
+	
+	
+}
+
+
+aside{
+	position:absolute;
+	top:10px;
+	right: 10px;
+}

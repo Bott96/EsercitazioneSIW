@@ -5,6 +5,8 @@
 <title>Gestione Segreteria Studenti</title>
 
 </head>
+
+<LINK rel="stylesheet" href="Stili/cssOldIndex.css" type="text/css">
 <body bgcolor="#E6E6FA">
 	<header>
 
@@ -32,13 +34,13 @@
 	</header>
 
 
-	<nav role="navigation">
+	<nav role="navigation" id="cssmenu">
 
 		<ol>
 		
 			
 				<li>Studenti
-					<ul>
+					<ul class = "subMenu">
 						<li><a href="ElencoStudenti.html"> Visualizza tutti gli studenti </a></li>
 						<li><a href="Index.html">Solo Nominativi </a></li>
 						<li> <a href="IscriviUnoStudente.html"> Iscrivi uno studente <br> </a></li>
@@ -49,7 +51,7 @@
 				
 				<li>Gruppi
 				
-					<ul>
+					<ul  class = "subMenu" >
 					<li><a href="Index.html">Soli nominativi</a></li>
 					<li><a href="Index.html">Studenti per Gruppo</a></li>		
 					</ul>
@@ -60,7 +62,7 @@
 				
 				<li>Corsi
 				
-					<ul>
+					<ul  class = "subMenu">
 						<li><a href="Index.html">Soli nominativi</a></li>
 						<li><a href="Index.html">Nominativi e Corsi di Laurea</a></li>
 						<li><a href="Index.html">Corsi e Studenti iscritti</a></li>
@@ -72,7 +74,7 @@
 				
 				<li>Corsi di Laurea
 				
-					<ul>
+					<ul  class = "subMenu">
 						<li><a href="Index.html">Nominativi e Dipartimento</a></li>
 						<li><a href="Index.html">Corsi afferenti ai Corsi di Laurea</a></li>
 						<li><a href="Index.html">Corsi e Studenti iscritti</a></li>
@@ -82,7 +84,7 @@
 				
 				
 				<li>Dipartimenti
-					<ul>
+					<ul  class = "subMenu">
 						<li><a href="Index.html">Nominativi</a></li>
 						<li><a href="Index.html">Corsi di Laurea</a></li>
 					</ul>
@@ -116,19 +118,13 @@
 	
 	
 	<section id="information">
-	
-		<article>
-			<header>
-						<big>Dicono di noi</big>
-			</header>
+	<article>
+		<header>
+			<big>Dicono di Noi</big>
+		</header>
 		La Segreteria è un servizio di riferimento per informazione e procedure burocratiche riguarda all´immatricolazione, iscrizione, registrazione esami, richiesta e rilascia di certificati, gestione della didattica e delle laure. 
 		Ogni corso di Laurea ha la propria segreteria dove si può rivolgersi per qualsiasi informazione riguardo alla didattica dell´Ateneo.
-	
-		
-		</article>
-		
-	</section>
-		
+	</article>
 	<article>
 		<header>
 			<big>Centro ICT di Ateneo</big>
@@ -136,9 +132,12 @@
 		Dalla pagina accessibile da <a href="http://www.unical.it/portale/strutture/centri/centroict/serviziict/homeservizicentro/">qui</a> è possibile accedere a tutti i servizi ed al  Centro Customer Satisfaction (CCS) del Centro ICT d’Ateneo. 
 		È possibile trovare il servizio desiderato sia attraverso degli elenchi di servizi organizzati secondo la tipologia di utenza 
 		sia attraverso la ricerca per parole chiave con un motore di ricerca locale google. Per ogni servizio
-		è stata approntata una scheda descrittiva 	contenente tutte le informazioni sullo stesso. Dal CCS 
+		è stata approntata una scheda descrittiva contenente tutte le informazioni sullo stesso. Dal CCS 
 		invece è possibile valutare, accedere alle statistiche d’uso o sporgere reclami sui servizi. 
-	</article>	
+	</article>
+</section>
+
+	
 
 
 

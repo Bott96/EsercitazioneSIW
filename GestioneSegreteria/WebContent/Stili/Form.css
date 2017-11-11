@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+body {
+	background: =#E6E6FA;
+	
+}
+
+
+.contenitoreForm{
+	
+	background: #E6E6FA;
+	border: 3px solid black;
+	width: 40%;
+	
+}
+
+.valore{
+	
+	
+}
+
+ .contenitoreForm .valore {
+
+	position: absolute;
+	left: 250px;
+	
+}
+	

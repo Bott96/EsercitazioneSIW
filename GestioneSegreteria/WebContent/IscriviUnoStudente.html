@@ -1,79 +1,58 @@
-	<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Iscrizione</title>
-</head>
-<body bgcolor="#E6E6FA">
 
-<header>
-	<div align = "center">	
-		<h1>Iscrivi uno studente</h1>
-		<h2>portale per l'inserimetno di uno studente</h2>
-	</div>
-</header>
+<link rel="stylesheet" href="Stili/Form.css" type="text/css">
+</head>
+<body class="body" >
+
+	<header>
+		<div align="center">
+			<h1>Iscrivi uno studente</h1>
+			<h2>portale per l'inserimetno di uno studente</h2>
+		</div>
+	</header>
 
 
 	<form method="post" action="iscrivi.php">
+	<div class="contenitoreForm">
+	
+		<div> <span class= "etichetta">Matricola:</span> <span class="valore">  <input name="Matricola" type="text"> </span></div>
+		<div> <span class= "etichetta">Nome:</span>  <span class="valore" >  <input name="Nome" type="text"></span> </div>
+		<div> <span class= "etichetta">Cognome:</span> <span class="valore" >  <input name="Cognome" type="text"></span></div>
+		<div> <span class= "etichetta">DataDiNascita: </span>  <span class="valore">  <input name="DataDiNascita" type="date"></span></div>
+		<div> <span class= "etichetta">Password:</span>  <span class="valore"> <input name="Password" type="password"></span></div>
 
-		<table>
-			<tr>
-				<td>Matricola:</td>
-				<td><input name="Matricola" type="text"></td>
 
-			</tr>
-			<tr>
-				<td>Nome:</td>
-				<td><input name="Nome" type="text"></td>
 
-			</tr>
-			<tr>
-				<td>Cognome:</td>
-				<td><input name="Cognome" type="text"></td>
 
-			</tr>
-			<tr>
-				<td>DataDiNascita:</td>
-				<td><input name="DataDiNascita" type="date"></td>
-
-			</tr>
+		<div> <span class= "etichetta">Indirizzo: </span> <span class="valore"> 
+		<select>
+			<optgroup label="Infomratica e Intelligenza Artificiale">INFORMATICA</optgroup>
+			<option value=1>Robotica</option>
+			<option value=2 selected>Sicurezza</option>
+			<option value=3>Data Science</option>
+		</select> 
+		</span> </div>
+		
+		<div> <span class= "etichetta"> Password:</span>  <span class="valore"> <input name="Password" type="password"></span></div>
+		
+		
+		<div> <span class= "etichetta"> <input name="Convalida" type="reset"> </span> <span class="valore"> <input name="invia"type="submit"> </span></div>  
 			
-			<tr>
-				<td>Password:</td>
-				<td><input name="Password" type="password"></td>
-
-			</tr>
-			<tr>
-				<td>Indirizzo:</td>
-				<td><select>
-				<optgroup label="Infomratica e Intelligenza Artificiale">INFORMATICA</optgroup>
-						<option value=1>Robotica</option>
-						<option value=2 selected>Sicurezza</option>
-						<option value=3 >Data Science</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td><input name="Convalidaa" type="reset"></td>
-
-			</tr>
-			<tr>
-				<td><input name="invia" type="submit"></td>
-
-			</tr>
 			
-			<tr>
-				<td>Password:</td>
-				<td><input name="Password" type="password"></td>
-
-			</tr>
-		</table>
+			
+</div>
 
 	</form>
-	
 
-<footer>	
-	<a href="Index.html">Pagina Iniziale</a>
-</footer>
+
+	<footer>
+		<a href="Index.html">Pagina Iniziale</a>
+	</footer>
 
 </body>
 </html>
