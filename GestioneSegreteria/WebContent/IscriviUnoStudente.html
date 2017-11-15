@@ -16,20 +16,20 @@
 		</div>
 	</header>
 
-
+	<section class="contenitoreForm">
 	<form method="post" action="iscrivi.php">
-	<div class="contenitoreForm">
+
 	
-		<div> <span class= "etichetta">Matricola:</span> <span class="valore">  <input name="Matricola" type="text"> </span></div>
-		<div> <span class= "etichetta">Nome:</span>  <span class="valore" >  <input name="Nome" type="text"></span> </div>
-		<div> <span class= "etichetta">Cognome:</span> <span class="valore" >  <input name="Cognome" type="text"></span></div>
-		<div> <span class= "etichetta">DataDiNascita: </span>  <span class="valore">  <input name="DataDiNascita" type="date"></span></div>
-		<div> <span class= "etichetta">Password:</span>  <span class="valore"> <input name="Password" type="password"></span></div>
+		<div class="campo"> <span class= "etichetta">Matricola:</span> <span class="valore">  <input name="Matricola" type="text"> </span></div>
+		<div class="campo"> <span class= "etichetta">Nome:</span>  <span class="valore" >  <input name="Nome" type="text"></span> </div>
+		<div class="campo"> <span class= "etichetta">Cognome:</span> <span class="valore" >  <input name="Cognome" type="text"></span></div>
+		<div class="campo"> <span class= "etichetta">DataDiNascita: </span>  <span class="valore">  <input name="DataDiNascita" type="date"></span></div>
+		<div class="campo"> <span class= "etichetta">Password:</span>  <span class="valore"> <input name="Password" type="password"></span></div>
 
 
 
 
-		<div> <span class= "etichetta">Indirizzo: </span> <span class="valore"> 
+		<div class="campo"> <span class= "etichetta">Indirizzo: </span> <span class="valore"> 
 		<select>
 			<optgroup label="Infomratica e Intelligenza Artificiale">INFORMATICA</optgroup>
 			<option value=1>Robotica</option>
@@ -38,17 +38,19 @@
 		</select> 
 		</span> </div>
 		
-		<div> <span class= "etichetta"> Password:</span>  <span class="valore"> <input name="Password" type="password"></span></div>
+		<div class="campo"> <span class= "etichetta"> Password:</span>  <span class="valore"> <input name="Password" type="password"></span></div>
 		
-		
-		<div> <span class= "etichetta"> <input name="Convalida" type="reset"> </span> <span class="valore"> <input name="invia"type="submit"> </span></div>  
+		<div class="campo">
+		<input name="validaDati" type="button" value="Valida Dati"/>
+		<input name="resetDati" type="reset" value="Reset Dati"/>
+		<input name="inviaDati" type="submit" value="Invia Dati"/>
+	</div>	
 			
-			
-			
-</div>
+
 
 	</form>
-
+			
+</section>
 
 	<footer>
 		<a href="Index.html">Pagina Iniziale</a>

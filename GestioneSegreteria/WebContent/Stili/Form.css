@@ -10,19 +10,20 @@ body {
 	
 	background: #E6E6FA;
 	border: 3px solid black;
-	width: 40%;
+	width: 35%;
 	
 }
 
-.valore{
-	
-	
+.contenitoreForm .campo{
+	margin-top: 15px;
 }
+
+
 
  .contenitoreForm .valore {
 
 	position: absolute;
-	left: 250px;
+	left: 200px;
 	
 }
 	
