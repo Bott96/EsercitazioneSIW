@@ -3,48 +3,47 @@
 <html>
 <head lang="it">
 <title>Gestione Segreteria Studenti</title>
+
+
+
+<!--
+
+
 <LINK rel="stylesheet" href="Stili/Mystyle.css" type="text/css">
-
 <LINK rel="stylesheet" href="Stili/Common.css" type="text/css">
-
-<!--  -->
-<style type="text/css">
-article {
-	font: 1em Time New Roman;
-	color: maroon;
-	background-color: #E6EFFA;
-}
-
-section {
-	font: 1em Time New Roman;
-	color: blue;
-	background-color: rgb(190, 170, 198);
-}
-
-footer {
-	font: 1em Time New Roman;
-}
-</style>
-
-
 
 <script type="text/javascript" src="JavaScript/FirstJSFile.js"></script>
 
+  -->
+  
+<LINK rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.min.css"
+	type="text/css">
+	
+<script type="text/javascript" src="JavaScript/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript"
+	src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+
+
+
 </head>
 <body>
-	<header>
+	<header class="row">
 
-		<div id="prova" align="center">
+
+		<figure class=" col-xs-4 col-sm-4 col-md-4 col-lg-4" >
+			<a href="Figura/universita.jpg"> <img alt="University"
+			 class="img-thumbnail"	src="Figura/universita.jpg"></a>
+			<figcaption>Scorcio della nostra università</figcaption>
+		</figure>
+
+
+		<div id="prova" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
 			<h1>Portale Segreteria Studenti.</h1>
 
 			<h2>Portale per la gestione degli studenti afferenti a qualche
 				corso di lauera.</h2>
-			<figure>
-				<a href="Figura/universita.jpg"> <img alt="University"
-					src="Figura/universita.jpg"></a>
-				<figcaption>Scorcio della nostra università</figcaption>
-			</figure>
 
 			<p>
 				Benvenuti nel portale di gestione delle <br> Segreteria
@@ -54,66 +53,96 @@ footer {
 
 		</div>
 
+		<figure class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<a href="Figura/universita.jpg"> <img alt="University"
+			  class="img-thumbnail"	src="Figura/universita.jpg"></a>
+			<figcaption>Scorcio della nostra università</figcaption>
+		</figure>
+
+
+
 	</header>
 
-	<div class="container">
+	<div class="container" >
+		
+		
+			<nav class="navbar navbar-inverse" role="navigation">
 
-		<form>
-			<input type="button" value="click" onclick="javascript:pallina()" />
-		</form>
-		<div class="tutorial">
-			<nav role="navigation">
-
-				<ul>
+				<ul class="nav navbar-nav">
 
 
-					<li class="dropdown"><a href="javascript:void(0)"
-						class="dropbtn">Studenti</a>
+					
+							<li > 
+									<a href="#"   class="nav-link dropdown" data-toggle="dropdown" >Studenti <span class="caret"></span> </a>
+									
+											<ul class="dropdown-menu">
+								
+													<li><a class="dropdown-item" href="ElencoStudenti.html"> Visualizza tutti gli studenti </a> </li>
+													<li> <a class="dropdown-item" href="Index.html">Solo Nominativi </a> </li>
+													<li> <a class="dropdown-item" href="IscriviUnoStudente.html"> Iscrivi uno studente </a></li>
+											</ul>
+							
+							
+							</li>
 
-						<div class="dropdown-content">
-							<a href="ElencoStudenti.html"> Visualizza tutti gli studenti
-							</a> <a href="Index.html">Solo Nominativi </a> <a
-								href="IscriviUnoStudente.html"> Iscrivi uno studente <br>
-							</a>
-						</div></li>
-
-
-					<li class="dropdown"><a href="javascript:void(0)"
-						class="dropbtn">Gruppi</a>
-
-						<div class="dropdown-content">
-							<a href="Index.html">Soli nominativi</a> <a href="Index.html">Studenti
-								per Gruppo</a>
-						</div></li>
-
-					<li class="dropdown"><a href="javascript:void(0)"
-						class="dropbtn">Corsi</a>
-
-						<div class="dropdown-content">
-							<a href="Index.html">Soli nominativi</a>< <a href="Index.html">Nominativi
-								e Corsi di Laurea</a> <a href="Index.html">Corsi e Studenti
-								iscritti</a>
-						</div></li>
+						
+						
 
 
+					<li>
+							<a href="#" class="nav-link dropdown" data-toggle="dropdown"  >Gruppi  <span class="caret"></span> </a>
+	
+								<ul class="dropdown-menu">
+								
+									<li><a class="dropdown-item" href="Index.html">Soli nominativi</a></li>
+									
+									 <li><a  class="dropdown-item"  href="Index.html">Studenti per Gruppo</a></li>
+								</ul>
+								
+						
+					</li>
+					
 
-					<li class="dropdown"><a href="javascript:void(0)"
-						class="dropbtn">Corsi di Laurea</a>
+					<li>
+							
+							<a href="#" class="nav-link dropdown" data-toggle="dropdown" >Corsi <span class="caret"></span></a>
+	
+							<ul class="dropdown-menu">
+							
+								<li> <a class="dropdown-item" href="Index.html">Soli nominativi</a></li>
+								<li> <a class="dropdown-item" href="Index.html">Nominativi e Corsi di Laurea</a> </li>
+								<li> <a class="dropdown-item" href="Index.html">Corsi e Studenti iscritti</a></li>
+								 
+							</ul>
+					</li>
 
-						<div class="dropdown-content">
-							<a href="Index.html">Nominativi e Dipartimento</a> <a
-								href="Index.html">Corsi afferenti ai Corsi di Laurea</a> <a
-								href="Index.html">Corsi e Studenti iscritti</a>
-						</div></li>
 
 
-					<li class="dropdown"><a href="javascript:void(0)"
-						class="dropbtn">Dipartimenti</a>
+					<li >
+					
+							<a href="#" class="nav-link dropdown" data-toggle="dropdown">Corsi di Laurea <span class="caret"></span></a>
+	
+							<ul class="dropdown-menu">
+							
+								<li> <a class="dropdown-item" href="Index.html">Nominativi e Dipartimento</a> </li>
+								<li> <a class="dropdown-item" href="Index.html">Corsi afferenti ai Corsi di Laurea</a></li>
+								<li> <a class="dropdown-item" href="Index.html">Corsi e Studenti iscritti</a></li>
+							</ul>
+							
+					</li>
 
-						<div class="dropdown-content">
-							<a href="Index.html">Nominativi</a> <a href="Index.html">Corsi
-								di Laurea</a>
-						</div></li>
+
+					<li>
+						
+							<a href="#" class="nav-link dropdown" data-toggle="dropdown">Dipartimenti <span class="caret"></span></a>
+	
+							<ul class="dropdown-menu">
+							
+								 <li><a class="dropdown-item" href="Index.html">Nominativi</a></li>
+								 <li><a class="dropdown-item" href="Index.html">Corsi	di Laurea</a></li>
+							</ul>
+						
+					</li>
 
 
 				</ul>
@@ -121,7 +150,7 @@ footer {
 				<div class="slider"></div>
 			</nav>
 		</div>
-	</div>
+	
 
 
 
@@ -129,9 +158,9 @@ footer {
 
 
 
-	<section draggable="true">
+	<section class="jumbotron" >
 
-		<div align="center">
+		<div align="center" >
 
 			<p>
 				Naviga tra queste pagine. Qui di seguito, troverai le fuzionalità
@@ -148,9 +177,9 @@ footer {
 
 
 
-	<section id="information">
+	<section class="row">
 
-		<article>
+		<article class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 			<header>
 				<big>Dicono di noi</big>
 			</header>
@@ -164,9 +193,9 @@ footer {
 
 		</article>
 
-	</section>
+	
 
-	<article>
+	<article class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 		<header>
 			<big>Centro ICT di Ateneo</big>
 		</header>
@@ -181,7 +210,7 @@ footer {
 		informazioni sullo stesso. Dal CCS invece è possibile valutare,
 		accedere alle statistiche d’uso o sporgere reclami sui servizi.
 	</article>
-
+</section>
 
 
 
