@@ -1,6 +1,7 @@
 @charset "ISO-8859-1";
 
-H1 {
+h1 {
+	font-size: 100%;
 	text-shadow: 3px 1px #8080ff;
 	color: RED;
 	background: aqua;
@@ -8,12 +9,38 @@ H1 {
 }
 
 h2 {
+	font-size: 100%;
 	text-decoration: line-through;
+}
+p{
+	font-size: 100%;
 }
 
 h1+h2{
 	text-decoration: underline;
 }
+
+@media (max-width: @screen-xs) {
+    h1{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    h2{font-size: 14px;}
+}
+
+
+
+
+#welcome{
+  font-size:3vw;
+}
+#to{
+  font-size:2vw;
+}
+#mp{
+  font-size:1.5vw;
+}
+
 
 body {
 	background-color: "#E6E6FA";

@@ -6,6 +6,16 @@
 <title>Iscrizione</title>
 
 <link rel="stylesheet" href="Stili/Form.css" type="text/css">
+
+
+  <script type="text/javascript">
+  function cancella()
+  {
+ 	 alert('sto cancellando i dati.')
+  }
+  </script>
+
+
 </head>
 <body class="body" >
 
@@ -42,7 +52,7 @@
 		
 		<div class="campo">
 		<input name="validaDati" type="button" value="Valida Dati"/>
-		<input name="resetDati" type="reset" value="Reset Dati"/>
+		<input name="resetDati" onclick="cancella();" type="reset" value="Reset Dati"/>
 		<input name="inviaDati" type="submit" value="Invia Dati"/>
 	</div>	
 			
